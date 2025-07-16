@@ -1,5 +1,4 @@
-# Desert-Lagoon
-deepseek + Nautilus 
+# Gradio Chat App
 
 A lightweight Gradio front-end for interacting with the NRP chat endpoint via LiteLLM.
 
@@ -28,7 +27,8 @@ For NRP and Nautilus users, log in with your `.edu` email at:
 
 1. **Clone the repository**  
    ```bash
-   git clone git@github.com:yourusername/Desert-Lagoon.git
+   git clone git@github.com:yourusername/gradio-chat-app.git
+   cd gradio-chat-app
    ```
 
 2. **Install dependencies**  
@@ -42,16 +42,14 @@ For NRP and Nautilus users, log in with your `.edu` email at:
    ```
    Open `.env` in a text editor and set the following:  
    ```dotenv
-   MODEL= deepseek-r1         # or whatever model you’re using
-    API_TOKEN= paste your code here # you can't access litellm api token again so keep it safe
+   MODEL=gemma3                # LiteLLM model alias
+   API_TOKEN=<your_key>        # Your LiteLLM API key
    ENDPOINT=https://llm.nrp-nautilus.io/
    ```
 
 ---
 
 ## 🔑 Obtaining Your LiteLLM API Key
-
-Read this first : https://nrp.ai/documentation/userdocs/ai/llm-managed/
 
 1. Sign up or log in to your LiteLLM provider portal.
 2. Generate a new API key.
@@ -70,7 +68,7 @@ A Gradio UI will launch locally (default: [http://localhost:7860](http://localho
 
 ---
 
-## 🤖 Supported Models for now
+## 🤖 Supported Models
 
 | Alias          | LiteLLM Identifier                                    | Key Features                                          |
 |----------------|-------------------------------------------------------|-------------------------------------------------------|
